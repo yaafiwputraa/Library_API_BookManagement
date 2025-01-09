@@ -121,6 +121,3 @@ Demo cara kerja aplikasi ini dapat ditemukan di YouTube:
 
 ## **Kontributor**
 - **[Muhammad Yaafi Wasesa Putra]**: Layanan Manajemen Buku
-
-
->>>>>>> 690a022f81ba0de42ddbb83229e1bcba986cc211
