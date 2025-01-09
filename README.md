@@ -1,3 +1,7 @@
+Berikut adalah dokumentasi lengkap dengan perbaikan yang sesuai dengan kode yang Anda kirimkan.
+
+---
+
 # **Library_API_BookManagement - Dokumentasi Sistem**
 
 ## **Deskripsi**
@@ -131,11 +135,25 @@ Content-Type: application/json
 }
 ```
 
-**Response:**
+**Response (Sukses):**
 ```json
 {
   "success": true,
   "message": "Book added successfully."
+}
+```
+
+**Response (Gagal - Validasi):**
+```json
+{
+  "success": false,
+  "message": "Validation failed",
+  "errors": {
+    "title": "The title field is required.",
+    "author": "The author field is required.",
+    "category": "The category field is required.",
+    "status": "The status field is required."
+  }
 }
 ```
 
@@ -161,7 +179,7 @@ Content-Type: application/json
 }
 ```
 
-**Response:**
+**Response (Sukses):**
 ```json
 {
   "success": true,
@@ -169,15 +187,29 @@ Content-Type: application/json
 }
 ```
 
+**Response (Gagal - Validasi):**
+```json
+{
+  "success": false,
+  "message": "Validation failed",
+  "errors": {
+    "title": "The title field is required.",
+    "author": "The author field is required.",
+    "category": "The category field is required.",
+    "status": "The status field is required."
+  }
+}
+```
+
 ---
 
 ### **6. Menghapus Buku**
-**Endpoint:** `DELETE /books/{id}`  
+**Endpoint:** `POST /books/delete/{id}`  
 **Deskripsi:** Menghapus buku berdasarkan ID. Hanya dapat diakses oleh admin.
 
 **Request:**
 ```bash
-DELETE /books/1 HTTP/1.1
+POST /books/delete/1 HTTP/1.1
 Host: localhost:8080
 Authorization: Bearer <your-session-token>
 ```
@@ -189,8 +221,6 @@ Authorization: Bearer <your-session-token>
   "message": "Book deleted successfully."
 }
 ```
-
-Berikut adalah tambahan endpoint untuk **register**, yang bisa dimasukkan ke dokumentasi Anda.
 
 ---
 
@@ -227,7 +257,8 @@ Content-Type: application/json
   "message": "Validation failed",
   "errors": {
     "username": "The username field must be unique.",
-    "password": "The password field must be at least 6 characters."
+    "password": "The password field must be at least 6 characters.",
+    "confirm_password": "The confirm password must match the password."
   }
 }
 ```
