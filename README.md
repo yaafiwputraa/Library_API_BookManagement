@@ -89,19 +89,6 @@ Authorization: Bearer <your-session-token>
 
 ---
 
-## **File yang Disertakan**
-- **Kode Aplikasi**: Semua file di folder `app/`.
-- **File Konfigurasi Penting**:
-  - `composer.json` dan `composer.lock`
-  - `.env.example`
-- **File Migrasi Database**: Terletak di `app/Database/Migrations/`.
-
-**File yang Tidak Disertakan:**
-- `.env` asli untuk melindungi informasi sensitif.
-- Folder `writable/` yang berisi log dan cache runtime.
-
----
-
 ## **Akses ke Aplikasi**
 - **Database**:
   - Host: `mysql-1e73275c-tst-01.h.aivencloud.com`
