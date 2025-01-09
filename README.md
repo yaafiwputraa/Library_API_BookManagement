@@ -190,6 +190,48 @@ Authorization: Bearer <your-session-token>
 }
 ```
 
+Berikut adalah tambahan endpoint untuk **register**, yang bisa dimasukkan ke dokumentasi Anda.
+
+---
+
+### **7. Mendaftarkan Pengguna Baru**
+**Endpoint:** `POST /register`  
+**Deskripsi:** Mendaftarkan pengguna baru.
+
+**Request:**
+```bash
+POST /register HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+  "username": "newuser",
+  "password": "password123",
+  "confirm_password": "password123",
+  "role": "user"
+}
+```
+
+**Response (Sukses):**
+```json
+{
+  "success": true,
+  "message": "Account created successfully. Please login."
+}
+```
+
+**Response (Gagal - Validasi):**
+```json
+{
+  "success": false,
+  "message": "Validation failed",
+  "errors": {
+    "username": "The username field must be unique.",
+    "password": "The password field must be at least 6 characters."
+  }
+}
+```
+
 ---
 
 ## **Struktur Database**
