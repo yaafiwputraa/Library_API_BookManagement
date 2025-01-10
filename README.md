@@ -277,7 +277,7 @@ Tabel `books`:
 ---
 
 ## **URL Project & Demo Video**
-- [Link Video Demo](https://youtu.be/your-demo-video-link)
+- [Link Video Demo]([https://youtu.be/your-demo-video-link](https://www.youtube.com/watch?v=tyTDFWukn2k))
 - [Link URL Project](https://moccasin-leopard-472669.hostingersite.com)
 
 ---
