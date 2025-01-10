@@ -277,10 +277,8 @@ Tabel `books`:
 ---
 
 ## **URL Project & Demo Video**
-Demo cara kerja aplikasi ini dapat ditemukan di YouTube:
-- [Link Video Demo](https://youtu.be/your-demo-video-link).
-Berikut Merupakan URL Projectnya :
-- [Link URL Project](https://moccasin-leopard-472669.hostingersite.com).
+- [Link Video Demo](https://youtu.be/your-demo-video-link)
+- [Link URL Project](https://moccasin-leopard-472669.hostingersite.com)
 
 ---
 
